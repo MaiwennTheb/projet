@@ -1,0 +1,477 @@
+           
+body, html{
+    height:100%;
+    font-family:Arial;
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0; /* pas de marge ni de padding */
+ }
+
+ *{
+     box-sizing: border-box;
+ }
+ .bg-img {  /* avant les classes on met un point */
+     background-image: url("ensibs.jpg"); /* image de fond */
+     min-height: 380px;
+     background-position: center;
+     background-size: cover;
+ }
+ .container{
+     position:absolute;
+     right:20px;
+     margin: 20px;
+     max-width: 300px;
+     padding: 16px;
+     background-color: white;
+ }
+
+ input[type=text], input[type=password] {
+     width: 100%;
+     padding:15px;
+     margin-bottom: 22px; border:none;
+     background: whitesmoke;
+ }
+ .btn{
+     background-color: #4CAF50;
+     color: white;
+     padding: 16px 20px;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+ }
+ .button-style {
+ background-color: #4CAF50; /* Green */
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+ p,h3 {
+     color:dimgray;
+     font-size: 18px;
+ }
+
+a{
+ color: #4CAF50;
+ font-size: 18px;
+}
+span{
+ color: dimgrey;
+}
+.section1{
+background-color: whitesmoke ; color: dimgray; 
+width : 200px; 
+height: auto; 
+font-size: 18px;
+padding:20px; 
+margin: 10px;
+}
+.section2{
+ background-color: whitesmoke ; 
+ color: dimgray; 
+ width : 2O0px; 
+ height: auto; 
+ font-size: 18px;
+ padding:20px; 
+ margin: 10px;
+}
+.section3{
+background-color: whitesmoke ; 
+color: dimgray; 
+width : 200px; 
+height: auto; 
+font-size: 18px;
+padding:20px; 
+margin: 10px;
+}
+.main{
+    display: flex;
+        flex:1;
+        width: 70%;
+        margin: 20px auto;
+}
+.content{
+    width: 80%;
+    padding: 20px;
+}
+.sectionsleft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+/* PARTIE CEREMONIE */
+.containerceremony {
+    width : 70%;
+    margin: auto;
+}
+.button-ceremony {
+    background-color: #4CAF50; /* Green */
+    border: 5px solidblack;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px;
+    cursor: 'Times New Roman';
+}
+
+.container_information { 
+    width: 80%;
+    margin: 2px auto;
+    padding: 30px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    text-align: left;
+}
+
+caption{
+    caption-side:top;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+}
+
+#myfooter {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 40px;
+}
+#myfooterJS {
+    font-size: 36px;
+    margin: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#myfooterJS:hover{
+    color: #4CAF50;
+}
+
+#button-myfooter{
+    background-color: lightblue;
+    border : black;
+    border : 5px solid black;
+    color: black;
+    padding: 15px 40px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#button-myfooter:hover{
+    background-color: #4CAF50;
+}
+
+.containerMedia {
+    width: 100%;
+    margin: auto;
+}
+
+.video-container {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video{
+    flex:1;
+    margin:10px;
+}
+
+iframe{
+    width: 100%;
+    height: 350px;
+}
+
+.containerleftright{
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+    margin:5px auto;
+}
+
+.left, .right {
+    margin: 20px 0;
+    width: 70%;
+    padding: 5px;                       
+}
+
+/* PARTIE ENSIBS */
+header,footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    font-size: 32px;
+}
+
+footer {
+    font-size: 16px;
+}
+
+.container1 {
+    display: grid; /* grid = diviser la section en grille */
+    flex:1; /* flex */
+    width: 100%;
+    margin: 0;
+}
+nav,article{
+    padding: 20px;
+}
+
+nav{
+    background-color: whitesmoke;
+    flex: 1;
+    font-size: 15px;
+}
+
+article{
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+
+nav ul{
+    list-style-type: none; /* pas de puces */
+    padding: 0;
+}
+
+nav ul li a{
+    flex : 1;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* largeur et hauteur incluent bordures et espacements */
+    color: black;
+}
+
+
+nav ul li a:hover{ /* survolé */
+    background-color: green;
+    color: white;
+}
+
+.btn1{
+    display: inline-block; /* inline-block = diviser la section en ligne */
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* pas de soulignement */    
+}
+
+.btn1:hover{ /* survolé sur le bouton*/
+    background-color: rgb(240, 106, 128);
+}
+
+@media(min-width: 600px){
+    .container1{
+        grid-template-columns: 20% 80%; /* 20% pour la partie gauche et 80% pour la partie droite */
+        grid-template-rows: none; /* pas de lignes */
+    }
+    nav{
+        order : 1; /* ordre de la partie gauche */
+    }
+    article{
+        order : 2; /* ordre de la partie droite */
+    }
+}
+
+/* PARTIE UBS */
+.header {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn2{
+    display: inline-block; /* inline-block = diviser la section en ligne */
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* pas de soulignement */    
+}
+
+.btn2:hover{ /* survolé sur le bouton*/
+    background-color: rgb(240, 106, 128);
+}
+
+.container2 {
+    display: flex; /* flex = diviser la section en ligne */
+    flex:2; /* flex */
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin: 20px;
+}
+.footer {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.menu1, .main1, .right {
+    padding: 20px;
+}
+.menu1 {
+    width: 25%;
+    background-color: whitesmoke;
+    border-right: 1px solid blueviolet;
+}
+
+.menu1 a{/* lien */
+    display: block; /* block = diviser la section en ligne */
+    background-color: blueviolet;
+    margin-top: 10px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;;
+    text-decoration: none; /* pas de soulignement */
+    border-radius: 4px;
+    text-align: center; 
+}
+
+.menu1 a:hover{ /* survolé */
+    background-color: rgb(240, 106, 128);
+}
+.main1 {
+    width: 45%;
+    padding: 0 20px;
+}
+
+.right {
+    width: 30%;
+    background-color: whitesmoke;
+    border-left: 1px solid blueviolet;
+}
+
+@media(max-width: 600px){
+    .container2{
+        flex-direction: column; /* colonne = diviser la section en colonne */
+    }
+    .menu1, .main1, .right {
+        width: 100%; /* largeur de la section */
+        padding: 0; /* pas de padding */
+        border-radius: 15px 0;
+    }
+    .menu1{
+        border-right: none;
+        border-bottom: 1px solid whitesmoke;
+    }
+     .right{
+        border-right: none;
+        border-bottom: 1px solid whitesmoke;
+    }
+}
+
+/* PARTIE FORMULAIRE */
+/* style formulaire */
+body {
+    font-family: Arial;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styles pour le formulaire */
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+/* Styles pour les labels */
+label {
+    display: block;/* Définir l'élément comme un bloc*/
+    margin-bottom: 8px;/*  espace de 8 pixels en bas de l'élément */
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Styles pour les champs de texte et autres éléments de formulaire */
+/* Appliquer les styles aux champs de texte, email, date, select et textarea */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: calc(100% - 20px);/* la largeur: 100%  moins 20 pixels */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+
+
+/* Styles pour les boutons radio et les cases à cocher */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;/*marge à droite des boutons radio et des cases à cocher */
+}
+/* styles aux étiquettes  après les boutons radio et les cases à cocher */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;/*texte aligné avec le bouton*/
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Styles pour le bouton de soumission */
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+}
+

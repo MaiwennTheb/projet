@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="style.css"> 
+    <head>
+<body>
+    <a href="Projet1.HTML"><img src="LogoGI.jpg" width=250px height=180px alt=""></a>
+    <div class="container_information">
+    
+    <h2> Plus d'informations</h2>
+    <iframe src="https://www-ensibs.univ-ubs.fr/fr/index.html"
+            width="100%" height="400px" id="iframe_ENSIBS"></iframe>
+        <h3> Découvrir plus d'informations sur notre site :
+        <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations-d-ingenieurs/genie-industriel-4-0.html" 
+        id="iframe_ENSIBS_a">ensibs.fr</a>
+    </h3>
+<h2> Nous contacter </h2>
+
+<h3 id="myfooterJS2">Retrouver nous sur notre site de Lorient ? </h3>
+     <script>
+        function myFunction() {
+             document.getElementById("myfooterJS2").style.fontSize = "35px";
+             document.getElementById("myfooterJS2").style.color = "black";
+             document.getElementById("myfooterJS2").style.backgroundColor = "white";
+             document.getElementById("myfooterJS2").innerHTML = 
+             "Adresse : 17 Bd Flandres - Dunkerque, 56100 Lorient";
+        }
+        </script>
+        <button type="button" onclick="myFunction()" id="button-myfooter"> Retrouvez-nous !!</button>
+
+        <h2> Dernière consultation </h2>
+        <button type="button" id="button-myfooter-information"
+        onclick="document.getElementById('Consultation').innerHTML =
+         new Date().toLocaleDateString('fr-FR', {weekday: 'long', year: 'numeric',month: 'long',day: 'numeric',hour: '2-digit',minute: '2-digit',second: '2-digit' })">
+        Cliquer ici.
+        </button>
+        <p id="Consultation"></p>
+
+        </div>
+        
+</body>
+</head>
+</html>
